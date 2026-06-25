@@ -13,8 +13,4 @@
     }
   ],
   
-    "PAYPAL_CLIENT_ID": "@paypal_client_id",
-    "PAYPAL_CLIENT_SECRET": "@paypal_client_secret",
-    "PAYPAL_RECEIVER_EMAIL": "@paypal_receiver_email"
-  }
 }
