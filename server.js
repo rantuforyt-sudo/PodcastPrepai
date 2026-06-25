@@ -5,9 +5,9 @@ const cors = require('cors');
 const path = require('path');
 const rateLimit = require('express-rate-limit');
 
-const generateRoute = require('./routes/generate');
-const paymentRoute = require('./routes/payment');
-const subscriptionRoute = require('./routes/subscription');
+const generateRoute = require('./generate');
+const paymentRoute = require('./payment');
+const subscriptionRoute = require('./subscription');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
