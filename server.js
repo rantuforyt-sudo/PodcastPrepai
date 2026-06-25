@@ -56,7 +56,7 @@ const apiLimiter = rateLimit({
 });
 
 // Serve static files
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(__dirname));
 
 // API Routes
 app.use('/api/generate', apiLimiter, generateRoute);
@@ -70,7 +70,7 @@ app.get('/api/health', (req, res) => {
 
 // Serve index.html for all non-API routes (SPA)
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 // Global error handler
